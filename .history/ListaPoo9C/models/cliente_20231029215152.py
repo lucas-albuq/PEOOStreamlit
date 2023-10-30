@@ -89,7 +89,7 @@ class NCliente:
         try:
             cls.__clientes = []
             with open("Clientes.json", "r") as f:
-                clientes_json = json.load(f)
+                clientes_json = json.(f)
                 for obj in clientes_json:
                     c = Cliente(obj["_Cliente__id"], obj["_Cliente__nome"], obj["_Cliente__email"], obj["_Cliente__fone"])
                     cls.__clientes.append(c)
